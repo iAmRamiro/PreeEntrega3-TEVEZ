@@ -1,0 +1,26 @@
+@mixin flexible  ($dis , $just , $align){
+    display:  $dis;
+    justify-content: $just;
+    align-items: $align;
+}
+    
+
+@mixin grid ($columnas , $espacio) { 
+    
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+
+    @media (max-width: 480px ) {
+        grid-template-columns: 1fr;
+        gap: 0em;
+    }
+}
+
+@mixin mq ( $medida : 480px) {
+    @media (max-width: $medida){
+        @content;
+    }
+    
+}
+
