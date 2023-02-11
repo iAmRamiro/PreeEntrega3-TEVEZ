@@ -11,6 +11,7 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   background-image: url(../img/background.webp);
+  overflow: hidden;
 }
 
 /* globals */
@@ -118,6 +119,15 @@ img {
   }
 }
 
+.cols {
+  width: 50%;
+}
+
+.cols0 {
+  width: 74%;
+  z-index: 5;
+}
+
 .envoltorio {
   display: flex;
   width: 100%;
@@ -126,6 +136,40 @@ img {
   align-items: center;
   padding: 0 10%;
   color: #fff;
+}
+.envoltorio::before {
+  position: absolute;
+  content: "";
+  height: 56rem;
+  width: 56rem;
+  border-radius: 50%;
+  left: -12%;
+  top: 45%;
+  background: linear-gradient(45deg, #EA1C1C, #F18686);
+  animation: object1 6s linear infinite;
+}
+.envoltorio::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, #EA1C1C, #F18686);
+  animation: object2 6s linear infinite;
+}
+@keyframes object1 {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+@keyframes object2 {
+  50% {
+    left: 35%;
+    top: 10%;
+  }
 }
 .envoltorio__topline {
   display: block;
@@ -180,6 +224,42 @@ img {
 }
 .envoltorio__btns button:hover {
   box-shadow: 0 0 5px #F03434, 0 0 25px #F03434;
+}
+.envoltorio__imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.envoltorio__imgbox img {
+  position: relative;
+  height: 100%;
+  width: calc(130% - 80px);
+  top: -100px;
+  right: 50px;
+  transform: rotateY(180deg);
+  animation: movimiento 4s linear infinite;
+}
+.envoltorio__imgbox #mancha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: movimiento-mancha 4s linear infinite;
+}
+@keyframes movimiento {
+  50% {
+    right: 30px;
+    top: -90px;
+  }
+}
+@keyframes movimiento-mancha {
+  50% {
+    top: 49%;
+    left: 51%;
+    width: 155%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
