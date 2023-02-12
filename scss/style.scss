@@ -367,3 +367,91 @@
 
 }
 
+
+// CURSOS
+
+main h2{
+    margin-top: 4rem;
+    color: $primary-color;
+    font-size: 6em;
+
+    @include mq(768px){
+        font-size: 4em;
+    }
+}
+
+.contenedor-curso{
+
+
+    @include flexible(row,center,flex-start);
+    min-height: 100vh;
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+.cursos{
+ 
+    @include grid(3, 2em);
+    width: 114em;
+    margin-top: 6rem;
+
+    &__item{
+        background-color: $gray;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        box-shadow: 0 0 5px $secondary-color;;
+        transition: 0.2s;
+
+        &:hover{
+            transform: translateY(-0.5%);
+            box-shadow: 0 0 5px $secondary-color, 0  0 25px $secondary-color;
+        }
+    }
+
+    &__img{
+
+        display: block;
+        width: 100%;
+        object-fit: contain;
+       
+    }
+
+    &__contenido{
+        padding: 3rem;
+    }
+
+    &__titulo{
+        font-size: 3rem;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 1.5rem;
+    }
+    
+    &__text{
+        font-size: 1.6rem;
+        letter-spacing:  0.1rem;
+        line-height: 1.7;
+        color: white;
+        margin-bottom: 2.6rem;
+    }
+
+    &__btn{
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 2rem;
+        text-align: center;
+        color: $white;
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 0.4em;
+        transition: 0.2s;
+        cursor: pointer;
+        letter-spacing: 0.1em;
+
+        &:hover{
+            color: #c2cffc;
+        }
+    }
+}
