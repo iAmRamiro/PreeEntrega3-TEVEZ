@@ -400,12 +400,12 @@ main h2{
         background-color: $gray;
         border-radius: 0.4rem;
         overflow: hidden;
-        box-shadow: 0 0 5px $secondary-color;;
+        box-shadow: 0 0 5px $secondary-color;
         transition: 0.2s;
 
         &:hover{
             transform: translateY(-0.5%);
-            box-shadow: 0 0 5px $secondary-color, 0  0 25px $secondary-color;
+            box-shadow: 0 0 5px $secondary-color, 0  0 25px $secondary-color, 0 0 50px, $secondary-color,  0  0 100px $secondary-color;
         }
     }
 
@@ -426,6 +426,7 @@ main h2{
         font-weight: 500;
         color: $white;
         margin-bottom: 1.5rem;
+        margin-top: 0;
     }
     
     &__text{

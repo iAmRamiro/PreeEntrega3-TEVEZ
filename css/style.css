@@ -423,7 +423,7 @@ main h2 {
 }
 .cursos__item:hover {
   transform: translateY(-0.5%);
-  box-shadow: 0 0 5px #F03434, 0 0 25px #F03434;
+  box-shadow: 0 0 5px #F03434, 0 0 25px #F03434, 0 0 50px, #F03434, 0 0 100px #F03434;
 }
 .cursos__img {
   display: block;
@@ -438,6 +438,7 @@ main h2 {
   font-weight: 500;
   color: #fff;
   margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .cursos__text {
   font-size: 1.6rem;
