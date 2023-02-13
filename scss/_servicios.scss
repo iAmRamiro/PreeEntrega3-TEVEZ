@@ -1,0 +1,106 @@
+@import "_vars";
+@import "_commons";
+@import "_mixins";
+
+
+// SERVICIOS 
+
+
+
+.servicios{
+
+
+    &__contenedor{
+        width: 100%;
+        min-height: 100vh;
+	    padding: 75px 8% 60px;
+      
+        
+      
+    }
+
+    &__cabecera{
+        max-width: 70rem;
+        margin: 0px auto 4.5rem;
+        text-align: center;
+
+        & h1{
+            position: relative;
+            display: inline-block;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                top: 120%;
+                left: 0;
+                background-color: #aaabb0;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 40%;
+                height: 3px;
+                top: calc(120% - 1px);
+                left: 0;
+                background-color: $secondary-color;
+            }
+        }
+
+        & p {
+            color: $white;
+            font-size: 2rem;
+        }
+    }
+
+    &__contenido{
+        @include grid(3,2rem);
+        overflow:hidden
+    }
+
+    &__card{
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25px 20px 35px;
+        background-color: #000000;
+        border: 1px solid #111111;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: transform 0.4s,
+                    box-shadow 0.4s;
+
+        &:hover{
+            transform: translateY(-2px);
+	        box-shadow: 0px 3px 18px 0px #000;
+        }
+
+        & i{
+
+            font-size: 4rem;
+	        color: $primary-color;
+
+        }
+
+        & h2{
+            text-align: center;
+            font-size: 2.7rem;
+            padding: 15px 0px 10px;
+            color: #adb5bd;
+           
+        }
+
+        & p {
+            color: #6b7279;
+        }
+    }
+
+
+
+}
