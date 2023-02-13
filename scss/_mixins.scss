@@ -24,6 +24,7 @@
     }
 }
 
+
 @mixin mq ( $medida : 480px) {
     @media (max-width: $medida){
         @content;
