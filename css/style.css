@@ -379,6 +379,183 @@ img {
   margin: auto;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  background-image: url(../img/background.webp);
+}
+
+/* globals */
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.contact__contenedor {
+  height: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .contact__contenedor {
+    font-size: 2rem;
+    margin-bottom: 7px;
+  }
+}
+.contact__contenedor h1 {
+  color: #f89e52;
+  text-transform: capitalize;
+  margin: 1.5rem;
+}
+.contact__contenedor h3 {
+  color: #d2d2d2;
+  letter-spacing: 0.5rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.contact__contenido {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1d1d25;
+  border-radius: 30px;
+  padding: 2rem;
+}
+.contact__form {
+  color: #444;
+  padding: 1.5rem;
+}
+@media (max-width: 768px) {
+  .contact__form {
+    margin: 0 auto;
+  }
+}
+.contact__form button {
+  background-color: #f89e52;
+  padding: 1.5rem;
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  font-size: 2rem;
+  transition: 0.5s;
+  width: 15rem;
+}
+@media (max-width: 768px) {
+  .contact__form button {
+    width: 100%;
+  }
+}
+.contact__form button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.contact__row {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contact__row {
+    flex-direction: column;
+  }
+}
+.contact__col {
+  width: 100%;
+  margin: 7px;
+}
+.contact__col input, .contact__col textarea {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  width: 100%;
+  min-width: 32rem;
+  padding: 1rem;
+  color: #fff;
+}
+.contact__col textarea {
+  resize: none;
+  min-width: 40rem;
+  width: 100%;
+}
+.contact__details {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  margin-top: 1.4rem;
+}
+@media (max-width: 768px) {
+  .contact__details {
+    margin-top: 4rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.contact__details .text {
+  padding: 1rem;
+}
+.contact__details .text h2 {
+  color: #d7d7d7;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.contact__details .text p {
+  color: #555;
+  margin-bottom: 3px;
+}
+.contact__icon {
+  width: 60px;
+  transition: 0.5s;
+}
+.contact__icon:hover {
+  transform: scale(1.1);
+}
+
 .navbar-brand {
   color: #EA1C1C;
   font-size: 4rem;
