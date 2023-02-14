@@ -1,0 +1,35 @@
+@import "_vars";
+@import "_commons";
+@import "_mixins";
+
+
+.trabajos{
+
+    &__contenedor{
+        width: 100%;
+        min-height: 100vh;
+	    padding: 75px 8% 60px;
+      
+        
+      
+    }
+
+    &__cabecera{
+        
+        @extend .servicios__cabecera;
+    }
+
+    &__contenido{
+        @extend .servicios__contenido;
+    }
+
+    &__card{
+        @extend .servicios__card;
+
+        & img{
+            margin: auto;
+        }
+    }
+
+    
+}
