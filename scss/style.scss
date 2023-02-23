@@ -7,6 +7,7 @@
 @import "_trabajos";
 @import "_servicios";
 @import "_about";
+@import "_error404";
 
 
 
@@ -377,11 +378,12 @@
 // CURSOS
 
 .curso-titulo{
+
+    text-align: center;
     margin-top: 4rem;
-    color: $white;
+    color: #dedce1;
     font-size: 6em;
-    text-decoration-line: underline;
-    text-decoration-color: $secondary-color;
+
 
     @include mq(768px){
         font-size: 4em;
@@ -406,14 +408,16 @@
 
     &__item{
         background-color: $gray;
-        border-radius: 0.4rem;
+        border-radius: 0.8rem;
         overflow: hidden;
         box-shadow: 0 0 5px $secondary-color;
         transition: 0.2s;
 
         &:hover{
-            transform: translateY(-0.5%);
-            box-shadow: 0 0 5px $secondary-color, 0  0 25px $secondary-color, 0 0 50px, $secondary-color,  0  0 100px $secondary-color;
+            transform: translateY(10px);
+            box-shadow: 0  0 5px $secondary-color, 
+                        0  0 25px $secondary-color, 
+                        0  0 50px $secondary-color,
         }
     }
 
@@ -451,16 +455,21 @@
         padding: 1.5rem;
         font-size: 2rem;
         text-align: center;
-        color: $white;
-        background-color: $secondary-color;
+        background-color: black;
         border: none;
-        border-radius: 0.4em;
+        border-radius: 0.5em;
         transition: 0.2s;
         cursor: pointer;
         letter-spacing: 0.1em;
 
-        &:hover{
-            color: #c2cffc;
+       
+
+        & a{
+           color: white;
+
+           &:hover{
+            color: $primary-color;
+            }
         }
     }
 }
