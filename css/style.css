@@ -138,25 +138,25 @@ img {
   color: #fff;
   font-size: 2rem;
 }
-.servicios__contenido, .trabajos__contenido, .skills__contenido {
+.servicios__contenido, .skills__contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  .servicios__contenido, .trabajos__contenido, .skills__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
 }
 @media (max-width: 480px) {
-  .servicios__contenido, .trabajos__contenido, .skills__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: 1fr;
     gap: 2em;
   }
 }
-.servicios__card, .trabajos__card, .skills__card {
+.servicios__card, .skills__card {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -167,21 +167,21 @@ img {
   cursor: pointer;
   transition: transform 0.4s, box-shadow 0.4s;
 }
-.servicios__card:hover, .trabajos__card:hover, .skills__card:hover {
+.servicios__card:hover, .skills__card:hover {
   transform: translateY(-2px);
   box-shadow: 0px 3px 18px 0px #000;
 }
-.servicios__card i, .trabajos__card i, .skills__card i {
+.servicios__card i, .skills__card i {
   font-size: 4rem;
   color: #EA1C1C;
 }
-.servicios__card h2, .trabajos__card h2, .skills__card h2 {
+.servicios__card h2, .skills__card h2 {
   text-align: center;
   font-size: 2.7rem;
   padding: 15px 0px 10px;
   color: #adb5bd;
 }
-.servicios__card p, .trabajos__card p, .skills__card p {
+.servicios__card p, .skills__card p {
   color: #6b7279;
 }
 
@@ -324,25 +324,25 @@ img {
   color: #fff;
   font-size: 2rem;
 }
-.servicios__contenido, .trabajos__contenido, .skills__contenido {
+.servicios__contenido, .skills__contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  .servicios__contenido, .trabajos__contenido, .skills__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
 }
 @media (max-width: 480px) {
-  .servicios__contenido, .trabajos__contenido, .skills__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: 1fr;
     gap: 2em;
   }
 }
-.servicios__card, .trabajos__card, .skills__card {
+.servicios__card, .skills__card {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -353,21 +353,21 @@ img {
   cursor: pointer;
   transition: transform 0.4s, box-shadow 0.4s;
 }
-.servicios__card:hover, .trabajos__card:hover, .skills__card:hover {
+.servicios__card:hover, .skills__card:hover {
   transform: translateY(-2px);
   box-shadow: 0px 3px 18px 0px #000;
 }
-.servicios__card i, .trabajos__card i, .skills__card i {
+.servicios__card i, .skills__card i {
   font-size: 4rem;
   color: #EA1C1C;
 }
-.servicios__card h2, .trabajos__card h2, .skills__card h2 {
+.servicios__card h2, .skills__card h2 {
   text-align: center;
   font-size: 2.7rem;
   padding: 15px 0px 10px;
   color: #adb5bd;
 }
-.servicios__card p, .trabajos__card p, .skills__card p {
+.servicios__card p, .skills__card p {
   color: #6b7279;
 }
 
@@ -612,8 +612,50 @@ img {
   min-height: 100vh;
   padding: 75px 8% 60px;
 }
-.trabajos__card img {
-  margin: auto;
+.category ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.category ul li {
+  display: inline-block;
+  padding: 3px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #adb5bd;
+  letter-spacing: 1px;
+  margin: 4px 15px;
+  cursor: pointer;
+  transition: color 0.4s;
+  font-weight: bold;
+}
+.category ul li:hover {
+  color: #EA1C1C;
+}
+.category ul li.active {
+  position: relative;
+  color: #EA1C1C;
+}
+.category ul li.active::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EA1C1C;
+}
+
+.filtr-item img {
+  margin: 1rem;
+}
+.filtr-item img:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
 
 html {
@@ -705,25 +747,25 @@ img {
   color: #fff;
   font-size: 2rem;
 }
-.servicios__contenido, .skills__contenido, .trabajos__contenido {
+.servicios__contenido, .skills__contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   overflow: hidden;
 }
 @media (max-width: 768px) {
-  .servicios__contenido, .skills__contenido, .trabajos__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
   }
 }
 @media (max-width: 480px) {
-  .servicios__contenido, .skills__contenido, .trabajos__contenido {
+  .servicios__contenido, .skills__contenido {
     grid-template-columns: 1fr;
     gap: 2em;
   }
 }
-.servicios__card, .skills__card, .trabajos__card {
+.servicios__card, .skills__card {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -734,21 +776,21 @@ img {
   cursor: pointer;
   transition: transform 0.4s, box-shadow 0.4s;
 }
-.servicios__card:hover, .skills__card:hover, .trabajos__card:hover {
+.servicios__card:hover, .skills__card:hover {
   transform: translateY(-2px);
   box-shadow: 0px 3px 18px 0px #000;
 }
-.servicios__card i, .skills__card i, .trabajos__card i {
+.servicios__card i, .skills__card i {
   font-size: 4rem;
   color: #EA1C1C;
 }
-.servicios__card h2, .skills__card h2, .trabajos__card h2 {
+.servicios__card h2, .skills__card h2 {
   text-align: center;
   font-size: 2.7rem;
   padding: 15px 0px 10px;
   color: #adb5bd;
 }
-.servicios__card p, .skills__card p, .trabajos__card p {
+.servicios__card p, .skills__card p {
   color: #6b7279;
 }
 

@@ -82,30 +82,75 @@
                     <h1 >Mis Proyectos</h1>
                     <p>Estos son algunos de los proyectos que he creado por mi cuenta</p>
                 </div>
-        
-                <div class="trabajos__contenido">
+
+
+                 <!--FILTERABLE GALLERY -->
+
+                <div class="container">
+
+                    <div class="col-md-12 col-xs-12">
+            
+                        <div class="category">
+                            <ul>
+            
+                                <!-- Filtering controls -->
+                                <li class="active" data-filter="all"> Todos </li>
+                                <li data-filter="1"> Web </li>
+                                <li data-filter="2"> Aplicaciones </li>
+                                <li data-filter="3"> Logos </li>
+                
+                            </ul>
+            
+                        </div>
                     
-                    <div class="trabajos__card">
-                        <img src="../img/proyectos/asistente.webp" alt="html5">
-                        <h2>Asistente de voz</h2>
-                        <p>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, aunque generalmente se aplica a la creación de sitios web.</p>
+            
+                        <div class="filtr-container ">
+            
+                            <div class="col-md-4 filtr-item" data-category="1" data-sort="value">
+                                <img src="../img/proyectos/web1.webp" alt="">
+                            </div>
+            
+                            <div class="col-md-4 filtr-item" data-category="1" data-sort="value">
+                                <img src="../img/proyectos/web2.webp" alt="">
+                            </div>
+            
+                            <div class="col-md-4 filtr-item" data-category="1" data-sort="value">
+                                <img src="../img/proyectos/web3.webp" alt="">
+                            </div>
+            
+                            <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                                <img src="../img/proyectos/aplicacion1.webp" alt="">
+                            </div>
+            
+                            <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                                <img src="../img/proyectos/aplicacion2.webp" alt="">
+                            </div>
+
+                            <div class="col-md-4 filtr-item" data-category="2" data-sort="value">
+                                <img src="../img/proyectos/aplicacion3.webp" alt="">
+                            </div>
+                            
+                            <div class="col-md-4 filtr-item" data-category="3" data-sort="value">
+                                <img src="../img/proyectos/logo1.webp" alt="">
+                            </div>
+
+                            <div class="col-md-4 filtr-item" data-category="3" data-sort="value">
+                                <img src="../img/proyectos/logo2.webp" alt="">
+                            </div>
+
+                            <div class="col-md-4 filtr-item" data-category="3" data-sort="value">
+                                <img src="../img/proyectos/logo3.webp" alt="">
+                            </div>
+
+                        </div>
                     </div>
-        
-                    <div class="trabajos__card">
-                        <img src="../img/proyectos/fitnesshub.webp" alt="html5">
-                        <h2>Fitness Hub</h2>
-                        <p> creación de un sitio web, una aplicación o un software. Se debe hacer un estudio para determinar las necesidades del cliente y a partir de ahí poner en marcha una interfaz atractiva e incorporar funcionalidades para el usuario fina</p>
-                    </div>
-        
-                    <div class="trabajos__card">
-                        <img src="../img/proyectos/spotify-copia.webp" alt="html5">
-                        <h2>Spotify Copia</h2>
-                        <p>arte y la técnica de obtener imágenes duraderas debido a la acción de la luz. ​ Es el proceso de proyectar imágenes, capturarlas y plasmarlas, bien por medio del fijado en un medio sensible a la luz o por la conversión en señales electrónicas.</p>
-                    </div>
-        
-                </div>
-        
+                </div>  <!--FILTERABLE GALLERY ENDS-->
+
+
             </section>
+
+           
+
         </main>
 
 
@@ -181,16 +226,21 @@
      <!--JS BS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--FILTERIZR-->
+    <script src="../jquery.filterizr.min.js"></script>
     <script>
-        var typingEffect = new Typed(".envoltorio__multiText",{
-            strings : [, "Free Lancer" , "Full Stack", "Dev Web","Programador"],
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500
-        })
+        var filterizd = $('.filtr-container').filterizr({
+     });
+            
+        $('.category li').click(function(){
+        $('.category li').removeClass('active');
+        $(this).addClass('active');   
+    });
+            
     </script>
+
 </body>
 </html>

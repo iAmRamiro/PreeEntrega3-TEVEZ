@@ -19,17 +19,61 @@
         @extend .servicios__cabecera;
     }
 
-    &__contenido{
-        @extend .servicios__contenido;
-    }
-
-    &__card{
-        @extend .servicios__card;
-
-        & img{
-            margin: auto;
-        }
-    }
-
-    
 }
+
+.category{
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        li {
+            display: inline-block;
+            padding: 3px 0px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #adb5bd;
+            letter-spacing: 1px;
+            margin: 4px 15px;
+            cursor: pointer;
+            transition: color 0.4s;
+            font-weight: bold;
+
+            &:hover{
+                color: $primary-color;
+            }
+
+            &.active{
+                position: relative;
+                color: $primary-color;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 110%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    } 
+
+}
+
+.filtr-item img{
+    margin: 1rem;
+
+    &:hover{
+        transition: all .5s;
+        transform: scale(1.2);
+    }
+
+}
+
