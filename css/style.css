@@ -898,7 +898,7 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  outline: 3px solid #787cb5;
+  outline: 3px solid #F03434;
   top: 0px;
   left: 2px;
   z-index: 1;
@@ -1540,7 +1540,7 @@ img {
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: 1.7;
-  color: white;
+  color: #fff;
   margin-bottom: 2.6rem;
 }
 .cursos__btn {
@@ -1557,7 +1557,7 @@ img {
   letter-spacing: 0.1em;
 }
 .cursos__btn a {
-  color: white;
+  color: #fff;
 }
 .cursos__btn a:hover {
   color: #EA1C1C;

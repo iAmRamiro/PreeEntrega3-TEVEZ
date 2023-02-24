@@ -26,14 +26,14 @@
         }
 
         & h1{
-            color: #f89e52;
+            color: $contact-color-1;
             text-transform: capitalize;
             margin: 1.5rem;
             
         }
 
         & h3 {
-            color: #d2d2d2;
+            color: $contact-color-2;
             letter-spacing: 0.5rem;
             font-size: 1.8rem;
             text-transform: capitalize;
@@ -44,7 +44,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        background-color: #1d1d25;
+        background-color: $contact-bg;
         border-radius: 30px;
         padding: 2rem;
     }
@@ -59,7 +59,7 @@
         }
 
         & button{
-            background-color: #f89e52;
+            background-color: $contact-color-1;
             padding: 1.5rem;
             color: #fff;
             border-radius: 10px;
@@ -74,7 +74,7 @@
             
             &:hover{
                 background-color: transparent;
-                border: 1px solid #fff;
+                border: 1px solid $white;
             }
         }
     }
@@ -101,7 +101,7 @@
             width: 100%;
             min-width: 32rem;
             padding: 1rem;
-            color: #fff;
+            color: $white;
         }
 
         & textarea{
