@@ -1,5 +1,7 @@
-# PreeEntrega3-TEVEZ
+# RAMIRO - WEBSITE
 
-Decidi Crear un nuevo proyecto desde 0. Lo hice un poco a las apuradas por que me costo SASS al principio, espero haber cumplido con todas las consignas
-Falta pulir algunas cosas para el proyecto final :) 
-Obviamente el proyecto es ficticio pero algun dia no lo sera jajaj
+- Proyecto ficticio, empleando todo lo visto en el curso de "Desarrollo Web" de CoderHouse, El proyecto es un "PORTFOLIO" de un Desarrollador Web
+donde se muestran los trabajos, las habilidades, servicios, y las caracterisitcas del desarrollador.
+
+
+
